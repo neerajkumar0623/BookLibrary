@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign up</h1>
+                    <h6>Please register now</h6>
+                </div>
+                
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="text" formControlName="fullname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div *ngIf="fullname?.invalid && (fullname?.touched || fullname?.dirty)">
+                              <span class="text-danger" *ngIf="fullname?.errors?.['required']"> *Fullname is required</span>
+                              <span class="text-danger" *ngIf="fullname?.errors?.['pattern']"> *Enter Only Character</span>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Mobile No.</label>
+                            <input type="number" formControlName="mobile" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div *ngIf="mobile?.invalid && (mobile?.touched || mobile?.dirty)">
+                              <span class="text-danger" *ngIf="mobile?.errors?.['required']"> *Mobile no. is required</span>
+                              <span class="text-danger" *ngIf="mobile?.errors?.['maxLength'] && mobile?.errors?.['minLenth']">length is 10-10 </span>
+                            </div>
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div *ngIf="email?.invalid && (email?.touched || email?.dirty)">
+                            <span class="text-danger" *ngIf="email?.errors?.['required']"> *Email is required</span>
+                            <span class="text-danger" *ngIf="email?.errors?.['pattern']"> *Enter valid Email</span>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" [type]="hide ? 'password':'text'" formControlName="password" class="form-control" id="exampleInputPassword1">
+                          <mat-icon style="position: absolute;
+                          right: 57px;
+                          bottom: 123px;" class="material-icons-outlined" matSuffix (click)="hide = !hide">
+                    
+                            {{hide ? 'visibility' : 'visibility_off' }}
+                            
+                          </mat-icon>
+                          <div *ngIf="password?.invalid && (password?.touched || password?.dirty)">
+                            <span class="text-danger" *ngIf="password?.errors?.['required']"> *Password is required</span>
+                            <span class="text-danger" *ngIf="password?.errors?.['pattern']"> *Enter valid Password</span>
+                          </div>
+                        </div>
+                       
+                        <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary">Signup</button>
+                      </form>
+                      <a class="text-center" style="color: white;text-decoration: none;" routerLink="/login">Already register? Click to Login</a>
+            </div>
+        </div>
+    </div>
+</div>

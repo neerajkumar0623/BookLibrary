@@ -1,0 +1,88 @@
+{
+  "books": [
+    {
+      "bookname": "Python",
+      "bookprice": "Rs 222",
+      "description": "python book for learning robotics machine learning",
+      "quantity": "1",
+      "fine": "0",
+      "id": 4
+    },
+    {
+      "bookname": "nodejs",
+      "bookprice": "Rs 120",
+      "description": "backend with nodejs",
+      "quantity": "1",
+      "fine": "0",
+      "id": 6
+    },
+    {
+      "bookname": "angular",
+      "bookprice": "Rs 900",
+      "description": "angular new book",
+      "quantity": "3",
+      "fine": "0",
+      "id": 8
+    },
+    {
+      "bookname": "ExpressJs",
+      "bookprice": "Rs 120",
+      "description": "Build web Server with ExpressJs",
+      "quantity": "5",
+      "fine": "0",
+      "id": 9
+    },
+    {
+      "bookname": "C++",
+      "bookprice": "Rs 123",
+      "description": "this is new book for c++",
+      "quantity": "4",
+      "fine": "0",
+      "id": 12
+    }
+  ],
+  "signupadmin": [
+    {
+      "fullname": "Neeraj Kumar",
+      "email": "nk062316@gmail.com",
+      "mobile": 8441958563,
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "fullname": "user1",
+      "email": "nk062316@gmail.com",
+      "mobile": 23232432423,
+      "password": "123456",
+      "id": 2
+    }
+  ],
+  "signupusers": [
+    {
+      "fullname": "Neeraj Kumar",
+      "email": "nk0623@gmail.com",
+      "mobile": 8441958563,
+      "password": "123456789",
+      "id": 1,
+      "serial": "101"
+    }
+   
+  ],
+  "signupcare": [
+    {
+      "fullname": "user1",
+      "email": "nk062316@gmail.com",
+      "mobile": 23232432423,
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "fullname": "nk",
+      "email": "nk06@gmail.com",
+      "mobile": 861662121,
+      "password": "12345",
+      "id": 2
+    }
+  ],
+  "issuebook": []
+}

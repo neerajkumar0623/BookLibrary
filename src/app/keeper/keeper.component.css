@@ -1,0 +1,24 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://unsplash.com/s/photos/book');
+    background-size: cover;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  /* .vertical-center {
+    margin: 2px;
+    padding: 18px;
+    margin-left: 609px;
+    position: absolute;
+    top: 50%;
+    height: 65px;
+    width: 149px;
+    text-align: center;
+    transform: translateY(-50%);
+  } */
